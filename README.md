@@ -13,9 +13,9 @@ I started wondering: "If I actually found a way to cut the 'Reflect' calls from 
 
 ## Summary of findings
 
-To answer the above questions: No.
+To answer the above questions: No. (But it doesn't mean WASM isn't viable. The processing expense of 'crossing the gap' needs to be understood, to get value out of the changes.)
 
-WASM *can* overtake JS in performance, *but* using *any* interoperability comes at a fairly substantial expense.
+WASM *can* overtake JS in performance, *but* using *any* interoperability comes at a fairly substantial expense. Any processing gains need to offset those expenses, or there won't be any benefit.
 
 In tests, each conversion tends to add around 150 ms to execution times.
 
